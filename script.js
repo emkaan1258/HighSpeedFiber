@@ -1,0 +1,1 @@
+document.querySelectorAll('img').forEach(img=>{img.loading=img.loading||'lazy';img.addEventListener('error',()=>{img.style.visibility='hidden';img.style.maxHeight='0'})});document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',()=>{let oc=document.querySelector('.offcanvas.show');if(oc&&window.bootstrap)bootstrap.Offcanvas.getInstance(oc)?.hide()}));
